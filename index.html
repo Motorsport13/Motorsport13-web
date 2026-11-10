@@ -307,6 +307,11 @@ function checkout(){
 
 renderCart();
 </script>
-
+function searchProducts(value){
+ const cards=document.querySelectorAll('#productos .cards .card');
+ cards.forEach(card=>{
+  card.style.display=card.textContent.toLowerCase().includes(value.toLowerCase())?'':'none';
+ });
+}
 </body>
 </html>
