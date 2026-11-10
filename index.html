@@ -1,104 +1,45 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motorsport 13 | Tienda y Taller</title>
-<meta name="description" content="Motorsport 13 en Cervera. Motos IMR, bicicletas eléctricas, taller y accesorios.">
+<title>MOTORSPORT 13 | Tienda y Taller</title>
+<meta name="description" content="Motos IMR, bicicletas eléctricas, cascos, recambios y taller en Cervera.">
 
 <style>
 *{box-sizing:border-box}
-body{
- margin:0;background:#101010;color:white;
- font-family:Arial,sans-serif
-}
-header{
- background:#080808;padding:20px;
- text-align:center;border-bottom:3px solid #ed1c24
-}
+body{margin:0;background:#101010;color:white;font-family:Arial,sans-serif}
+header{background:#080808;padding:20px;text-align:center;border-bottom:3px solid #ed1c24}
 .logo-img{width:280px;max-width:90%;height:auto}
-nav{
- padding:15px;background:#191919;
- text-align:center;position:sticky;top:0;z-index:5
-}
-nav a{
- color:white;text-decoration:none;
- margin:8px;font-weight:bold;font-size:14px
-}
-.hero{
- text-align:center;padding:75px 15px;
- background:linear-gradient(135deg,#181818,#48090e)
-}
-.hero h1{font-size:43px;margin:0}
+nav{padding:15px;background:#191919;text-align:center;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;margin:8px;font-weight:bold;font-size:14px}
+.search-area{background:#191919;padding:20px;text-align:center}
+.search-area input{width:95%;max-width:550px;padding:15px;border:2px solid #ed1c24;border-radius:6px;font-size:16px}
+#search-message{color:#ddd;min-height:20px}
+.hero{text-align:center;padding:70px 15px;background:linear-gradient(135deg,#181818,#48090e)}
+.hero h1{font-size:40px;margin:0}
 span,.red{color:#ed1c24}
 .hero p{color:#ddd;font-size:17px}
-.btn,.add-btn{
- display:inline-block;background:#ed1c24;color:white;
- padding:13px 22px;border:0;border-radius:5px;
- text-decoration:none;font-weight:bold;cursor:pointer
-}
+.btn,.add-btn{display:inline-block;background:#ed1c24;color:white;padding:13px 22px;border:0;border-radius:5px;text-decoration:none;font-weight:bold;cursor:pointer}
 section{padding:45px 15px;text-align:center}
 h2 span{color:#ed1c24}
-.cards{
- display:flex;flex-wrap:wrap;
- justify-content:center;gap:18px
-}
-.card{
- background:#202020;padding:22px;
- border-radius:10px;width:280px;
- border-bottom:3px solid #ed1c24
-}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
+.card{background:#202020;padding:22px;border-radius:10px;width:280px;border-bottom:3px solid #ed1c24}
 .card h3{color:#ed1c24}
 .card p{color:#ddd;line-height:1.6}
-.product-image{
- width:100%;height:155px;
- background:#151515;border-radius:7px;
- display:flex;align-items:center;
- justify-content:center;font-size:55px;
- margin-bottom:15px
-}
+.product-image{width:100%;height:155px;background:#151515;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:55px;margin-bottom:15px}
 .add-btn{width:100%;margin-top:12px}
-.add-btn:active{transform:scale(.97)}
-.cart-button{
- position:fixed;right:16px;bottom:18px;
- z-index:10;background:#ed1c24;color:white;
- border:0;border-radius:50px;padding:16px 20px;
- font-size:17px;font-weight:bold;cursor:pointer;
- box-shadow:0 3px 15px #000
-}
-#cart-panel{
- display:none;position:fixed;z-index:20;
- top:0;right:0;width:100%;max-width:400px;
- height:100%;overflow:auto;background:#191919;
- padding:22px;box-shadow:0 0 30px #000
-}
-.cart-item{
- border-bottom:1px solid #444;
- padding:12px 0;text-align:left
-}
-.cart-item button{
- background:#ed1c24;color:white;
- border:0;padding:6px 10px;
- border-radius:4px;cursor:pointer
-}
-.close-cart{
- float:right;background:#ed1c24;color:white;
- border:0;padding:9px 13px;cursor:pointer
-}
-.cart-total{
- border-top:2px solid #ed1c24;
- padding-top:15px;margin-top:15px
-}
 .contact{background:#1c1c1c}
-footer{
- background:#080808;text-align:center;
- padding:25px;color:#aaa
-}
-@media(max-width:500px){
- .hero h1{font-size:34px}
- nav a{display:inline-block;margin:7px}
-}
+footer{background:#080808;text-align:center;padding:25px;color:#aaa}
+.cart-button{position:fixed;right:16px;bottom:18px;z-index:10;background:#ed1c24;color:white;border:0;border-radius:50px;padding:16px 20px;font-size:17px;font-weight:bold;cursor:pointer;box-shadow:0 3px 15px #000}
+#cart-panel{display:none;position:fixed;z-index:20;top:0;right:0;width:100%;max-width:400px;height:100%;overflow:auto;background:#191919;padding:22px;box-shadow:0 0 30px #000}
+.cart-item{border-bottom:1px solid #444;padding:12px 0;text-align:left}
+.cart-item button,.close-cart{background:#ed1c24;color:white;border:0;padding:8px 11px;border-radius:4px;cursor:pointer;margin:3px}
+.close-cart{float:right}
+.cart-total{border-top:2px solid #ed1c24;padding-top:15px;margin-top:15px}
+@media(max-width:500px){.hero h1{font-size:32px}nav a{display:inline-block;margin:7px}}
 </style>
 </head>
 
@@ -110,15 +51,20 @@ src="https://raw.githubusercontent.com/Motorsport13/Motorsport13-web/main/file_0
 alt="MOTORSPORT 13">
 <p>TALLER · MOTOS · RECAMBIOS · COMPETICIÓN</p>
 </header>
-<div style="background:#191919;padding:20px;text-align:center;">
-<input type="text" id="productSearch" placeholder="🔍 Buscar motos, cascos, recambios..." oninput="searchProducts(this.value)" style="width:90%;max-width:500px;padding:15px;border-radius:6px;border:2px solid #ed1c24;font-size:16px;">
-</div>
+
 <nav>
 <a href="#inicio">Inicio</a>
 <a href="#servicios">Taller</a>
 <a href="#productos">Productos</a>
 <a href="#contacto">Contacto</a>
 </nav>
+
+<div class="search-area">
+<input type="search" id="productSearch"
+placeholder="🔍 Buscar motos, cascos, recambios..."
+oninput="searchProducts(this.value)">
+<p id="search-message"></p>
+</div>
 
 <div class="hero" id="inicio">
 <h1>MOTORSPORT <span>13</span></h1>
@@ -155,40 +101,28 @@ alt="MOTORSPORT 13">
 <div class="product-image">🏍️</div>
 <h3>Motos IMR</h3>
 <p>Motos infantiles, MiniGP y modelos para disfrutar del mundo del motor.</p>
-<p>Precio: consultar</p>
-<button class="add-btn" onclick="addToCart('Motos IMR')">
-AÑADIR AL CARRITO
-</button>
+<button class="add-btn" onclick="addToCart('Motos IMR')">AÑADIR AL CARRITO</button>
 </div>
 
 <div class="card">
 <div class="product-image">⚡</div>
 <h3>Bicicletas eléctricas</h3>
 <p>Bicicletas eléctricas y movilidad para todas las edades.</p>
-<p>Precio: consultar</p>
-<button class="add-btn" onclick="addToCart('Bicicletas eléctricas')">
-AÑADIR AL CARRITO
-</button>
+<button class="add-btn" onclick="addToCart('Bicicletas eléctricas')">AÑADIR AL CARRITO</button>
 </div>
 
 <div class="card">
 <div class="product-image">🪖</div>
 <h3>Cascos y equipación</h3>
 <p>Cascos, guantes, botas y equipación para disfrutar del motor.</p>
-<p>Precio: consultar</p>
-<button class="add-btn" onclick="addToCart('Cascos y equipación')">
-AÑADIR AL CARRITO
-</button>
+<button class="add-btn" onclick="addToCart('Cascos y equipación')">AÑADIR AL CARRITO</button>
 </div>
 
 <div class="card">
 <div class="product-image">🔧</div>
 <h3>Recambios y accesorios</h3>
 <p>Aceites, lubricantes, recambios y accesorios para tu moto.</p>
-<p>Precio: consultar</p>
-<button class="add-btn" onclick="addToCart('Recambios y accesorios')">
-AÑADIR AL CARRITO
-</button>
+<button class="add-btn" onclick="addToCart('Recambios y accesorios')">AÑADIR AL CARRITO</button>
 </div>
 
 </div>
@@ -199,10 +133,7 @@ AÑADIR AL CARRITO
 <p><strong>Motorsport 13</strong></p>
 <p>📍 Avenida Igualada, Cervera (Lleida)</p>
 <p>Tu taller de confianza.</p>
-<a class="btn"
-href="https://www.google.com/maps/search/?api=1&query=Motorsport+13+Cervera">
-CÓMO LLEGAR
-</a>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Motorsport+13+Cervera">CÓMO LLEGAR</a>
 </section>
 
 <footer>
@@ -222,26 +153,44 @@ CÓMO LLEGAR
 <div class="cart-total">
 <h3 id="cart-total">Total: pendiente de presupuesto</h3>
 <p>Los precios se confirmarán antes de realizar el pago.</p>
-<button class="add-btn" onclick="checkout()">
-FINALIZAR PEDIDO
-</button>
+<button class="add-btn" onclick="checkout()">SOLICITAR PEDIDO</button>
 </div>
 </div>
 
 <script>
-let cart = JSON.parse(localStorage.getItem('motorsportCart') || '[]');
- const cards=document.querySelectorAll('#productos .cards .card');
- cards.forEach(card=>{
-  card.style.display=card.textContent.toLowerCase().includes(value.toLowerCase())?'':'none';
- });
+let cart=[];
+try{
+ cart=JSON.parse(localStorage.getItem('motorsportCart')||'[]');
+ if(!Array.isArray(cart))cart=[];
+}catch(error){
+ cart=[];
 }
- const cards=document.querySelectorAll('#productos .cards .card');
+
+function searchProducts(value){
+ const cards=document.querySelectorAll('#productos .card');
+ const term=value.trim().toLocaleLowerCase('es');
+ let visible=0;
+
  cards.forEach(card=>{
-  card.style.display=card.textContent.toLowerCase().includes(value.toLowerCase())?'':'none';
+  const matches=card.textContent.toLocaleLowerCase('es').includes(term);
+  card.style.display=matches?'':'none';
+  if(matches)visible++;
  });
+
+ const message=document.getElementById('search-message');
+ if(term==='' ){
+  message.textContent='';
+ }else if(visible===0){
+  message.textContent='No encontramos productos con esa búsqueda.';
+ }else{
+  message.textContent=visible+' categoría(s) encontrada(s).';
+ }
 }
+
 function saveCart(){
- localStorage.setItem('motorsportCart',JSON.stringify(cart));
+ try{
+  localStorage.setItem('motorsportCart',JSON.stringify(cart));
+ }catch(error){}
  renderCart();
 }
 
@@ -278,6 +227,7 @@ function renderCart(){
 }
 
 function changeQuantity(index,amount){
+ if(!cart[index])return;
  cart[index].quantity+=amount;
  if(cart[index].quantity<=0)cart.splice(index,1);
  saveCart();
@@ -302,16 +252,11 @@ function checkout(){
   alert('Tu carrito está vacío.');
   return;
  }
- alert('Tu pedido está preparado. El pago online estará disponible cuando configuremos la pasarela de pago.');
+ alert('Tu pedido está preparado. Contacta con MOTORSPORT 13 para confirmar productos y precios. El pago online todavía no está activado.');
 }
 
 renderCart();
 </script>
-function searchProducts(value){
- const cards=document.querySelectorAll('#productos .cards .card');
- cards.forEach(card=>{
-  card.style.display=card.textContent.toLowerCase().includes(value.toLowerCase())?'':'none';
- });
-}
+
 </body>
 </html>
