@@ -1,38 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motorsport 13 | Taller de motos Cervera</title>
-<meta name="description" content="Motorsport 13 en Cervera. Taller de motos, venta de motos IMR, bicicletas eléctricas, recambios y accesorios.">
+<title>Motorsport 13 | Tienda y Taller</title>
+<meta name="description" content="Motorsport 13 en Cervera. Motos IMR, bicicletas eléctricas, taller y accesorios.">
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#101010;color:white;font-family:Arial,sans-serif}
-header{background:#080808;padding:22px;text-align:center;border-bottom:3px solid #e21b2d}
-.logo{font-size:38px;font-weight:900}
-.logo span{color:#ed1c24}
-nav{padding:15px;text-align:center;background:#191919}
-nav a{color:white;text-decoration:none;margin:10px;font-weight:bold}
-.hero{text-align:center;padding:85px 15px;background:linear-gradient(135deg,#181818,#38090d)}
-.hero h1{font-size:48px;margin:0}
-.hero h1 span{color:#ed1c24}
-.hero p{font-size:19px;color:#ddd}
-.btn{display:inline-block;background:#ed1c24;color:white;padding:15px 25px;text-decoration:none;border-radius:5px;font-weight:bold;margin-top:15px}
-section{padding:45px 20px;text-align:center}
-h2{font-size:30px}
+body{
+ margin:0;background:#101010;color:white;
+ font-family:Arial,sans-serif
+}
+header{
+ background:#080808;padding:20px;
+ text-align:center;border-bottom:3px solid #ed1c24
+}
+.logo-img{width:280px;max-width:90%;height:auto}
+nav{
+ padding:15px;background:#191919;
+ text-align:center;position:sticky;top:0;z-index:5
+}
+nav a{
+ color:white;text-decoration:none;
+ margin:8px;font-weight:bold;font-size:14px
+}
+.hero{
+ text-align:center;padding:75px 15px;
+ background:linear-gradient(135deg,#181818,#48090e)
+}
+.hero h1{font-size:43px;margin:0}
+span,.red{color:#ed1c24}
+.hero p{color:#ddd;font-size:17px}
+.btn,.add-btn{
+ display:inline-block;background:#ed1c24;color:white;
+ padding:13px 22px;border:0;border-radius:5px;
+ text-decoration:none;font-weight:bold;cursor:pointer
+}
+section{padding:45px 15px;text-align:center}
 h2 span{color:#ed1c24}
-.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
-.card{background:#202020;padding:25px;border-radius:10px;width:280px;border-bottom:3px solid #ed1c24}
+.cards{
+ display:flex;flex-wrap:wrap;
+ justify-content:center;gap:18px
+}
+.card{
+ background:#202020;padding:22px;
+ border-radius:10px;width:280px;
+ border-bottom:3px solid #ed1c24
+}
 .card h3{color:#ed1c24}
 .card p{color:#ddd;line-height:1.6}
+.product-image{
+ width:100%;height:155px;
+ background:#151515;border-radius:7px;
+ display:flex;align-items:center;
+ justify-content:center;font-size:55px;
+ margin-bottom:15px
+}
+.add-btn{width:100%;margin-top:12px}
+.add-btn:active{transform:scale(.97)}
+.cart-button{
+ position:fixed;right:16px;bottom:18px;
+ z-index:10;background:#ed1c24;color:white;
+ border:0;border-radius:50px;padding:16px 20px;
+ font-size:17px;font-weight:bold;cursor:pointer;
+ box-shadow:0 3px 15px #000
+}
+#cart-panel{
+ display:none;position:fixed;z-index:20;
+ top:0;right:0;width:100%;max-width:400px;
+ height:100%;overflow:auto;background:#191919;
+ padding:22px;box-shadow:0 0 30px #000
+}
+.cart-item{
+ border-bottom:1px solid #444;
+ padding:12px 0;text-align:left
+}
+.cart-item button{
+ background:#ed1c24;color:white;
+ border:0;padding:6px 10px;
+ border-radius:4px;cursor:pointer
+}
+.close-cart{
+ float:right;background:#ed1c24;color:white;
+ border:0;padding:9px 13px;cursor:pointer
+}
+.cart-total{
+ border-top:2px solid #ed1c24;
+ padding-top:15px;margin-top:15px
+}
 .contact{background:#1c1c1c}
-footer{background:#080808;text-align:center;padding:25px;color:#aaa}
+footer{
+ background:#080808;text-align:center;
+ padding:25px;color:#aaa
+}
+@media(max-width:500px){
+ .hero h1{font-size:34px}
+ nav a{display:inline-block;margin:7px}
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<img src="https://raw.githubusercontent.com/Motorsport13/Motorsport13-web/main/file_00000000228c81f5ba900e1c72f478ce.png" alt="MOTORSPORT 13" style="width:280px;max-width:90%;height:auto;display:block;margin:0 auto 15px;">
+<img class="logo-img"
+src="https://raw.githubusercontent.com/Motorsport13/Motorsport13-web/main/file_00000000228c81f5ba900e1c72f478ce.png"
+alt="MOTORSPORT 13">
 <p>TALLER · MOTOS · RECAMBIOS · COMPETICIÓN</p>
 </header>
 
@@ -47,7 +122,7 @@ footer{background:#080808;text-align:center;padding:25px;color:#aaa}
 <h1>MOTORSPORT <span>13</span></h1>
 <p>Tu pasión por las motos empieza aquí.</p>
 <p>Taller multimarca y tienda especializada en Cervera.</p>
-<a class="btn" href="#contacto">CONTACTA CON NOSOTROS</a>
+<a class="btn" href="#productos">VER TIENDA</a>
 </div>
 
 <section id="servicios">
@@ -59,7 +134,7 @@ footer{background:#080808;text-align:center;padding:25px;color:#aaa}
 </div>
 <div class="card">
 <h3>🏍️ Preparación</h3>
-<p>Puesta a punto, mantenimiento y asesoramiento para motos de competición.</p>
+<p>Puesta a punto y asesoramiento para motos de competición.</p>
 </div>
 <div class="card">
 <h3>🛞 Neumáticos</h3>
@@ -70,19 +145,50 @@ footer{background:#080808;text-align:center;padding:25px;color:#aaa}
 
 <section id="productos">
 <h2>TIENDA <span>MOTORSPORT 13</span></h2>
+<p>Descubre nuestros productos y añade tus favoritos al carrito.</p>
+
 <div class="cards">
+
 <div class="card">
+<div class="product-image">🏍️</div>
 <h3>Motos IMR</h3>
 <p>Motos infantiles, MiniGP y modelos para disfrutar del mundo del motor.</p>
+<p>Precio: consultar</p>
+<button class="add-btn" onclick="addToCart('Motos IMR')">
+AÑADIR AL CARRITO
+</button>
 </div>
+
 <div class="card">
+<div class="product-image">⚡</div>
 <h3>Bicicletas eléctricas</h3>
 <p>Bicicletas eléctricas y movilidad para todas las edades.</p>
+<p>Precio: consultar</p>
+<button class="add-btn" onclick="addToCart('Bicicletas eléctricas')">
+AÑADIR AL CARRITO
+</button>
 </div>
+
 <div class="card">
-<h3>Recambios y accesorios</h3>
-<p>Aceites, lubricantes, cascos, guantes, equipación y accesorios.</p>
+<div class="product-image">🪖</div>
+<h3>Cascos y equipación</h3>
+<p>Cascos, guantes, botas y equipación para disfrutar del motor.</p>
+<p>Precio: consultar</p>
+<button class="add-btn" onclick="addToCart('Cascos y equipación')">
+AÑADIR AL CARRITO
+</button>
 </div>
+
+<div class="card">
+<div class="product-image">🔧</div>
+<h3>Recambios y accesorios</h3>
+<p>Aceites, lubricantes, recambios y accesorios para tu moto.</p>
+<p>Precio: consultar</p>
+<button class="add-btn" onclick="addToCart('Recambios y accesorios')">
+AÑADIR AL CARRITO
+</button>
+</div>
+
 </div>
 </section>
 
@@ -91,7 +197,10 @@ footer{background:#080808;text-align:center;padding:25px;color:#aaa}
 <p><strong>Motorsport 13</strong></p>
 <p>📍 Avenida Igualada, Cervera (Lleida)</p>
 <p>Tu taller de confianza.</p>
-<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Motorsport+13+Cervera">CÓMO LLEGAR</a>
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Motorsport+13+Cervera">
+CÓMO LLEGAR
+</a>
 </section>
 
 <footer>
@@ -99,6 +208,94 @@ footer{background:#080808;text-align:center;padding:25px;color:#aaa}
 <p>Cervera · Lleida</p>
 <p>© 2026 Motorsport 13. Todos los derechos reservados.</p>
 </footer>
+
+<button class="cart-button" onclick="openCart()">
+🛒 CARRITO (<span id="cart-count">0</span>)
+</button>
+
+<div id="cart-panel">
+<button class="close-cart" onclick="closeCart()">CERRAR ✕</button>
+<h2>🛒 MI CARRITO</h2>
+<div id="cart-items"></div>
+<div class="cart-total">
+<h3 id="cart-total">Total: pendiente de presupuesto</h3>
+<p>Los precios se confirmarán antes de realizar el pago.</p>
+<button class="add-btn" onclick="checkout()">
+FINALIZAR PEDIDO
+</button>
+</div>
+</div>
+
+<script>
+let cart = JSON.parse(localStorage.getItem('motorsportCart') || '[]');
+
+function saveCart(){
+ localStorage.setItem('motorsportCart',JSON.stringify(cart));
+ renderCart();
+}
+
+function addToCart(name){
+ const item=cart.find(p=>p.name===name);
+ if(item){
+  item.quantity++;
+ }else{
+  cart.push({name:name,quantity:1});
+ }
+ saveCart();
+ alert(name+' añadido al carrito.');
+}
+
+function renderCart(){
+ const items=document.getElementById('cart-items');
+ const count=document.getElementById('cart-count');
+
+ count.textContent=cart.reduce((sum,p)=>sum+p.quantity,0);
+
+ if(cart.length===0){
+  items.innerHTML='<p>Tu carrito está vacío.</p>';
+ }else{
+  items.innerHTML=cart.map((p,i)=>`
+   <div class="cart-item">
+    <strong>${p.name}</strong>
+    <p>Cantidad: ${p.quantity}</p>
+    <button onclick="changeQuantity(${i},-1)">−</button>
+    <button onclick="changeQuantity(${i},1)">+</button>
+    <button onclick="removeItem(${i})">Eliminar</button>
+   </div>
+  `).join('');
+ }
+}
+
+function changeQuantity(index,amount){
+ cart[index].quantity+=amount;
+ if(cart[index].quantity<=0)cart.splice(index,1);
+ saveCart();
+}
+
+function removeItem(index){
+ cart.splice(index,1);
+ saveCart();
+}
+
+function openCart(){
+ document.getElementById('cart-panel').style.display='block';
+ renderCart();
+}
+
+function closeCart(){
+ document.getElementById('cart-panel').style.display='none';
+}
+
+function checkout(){
+ if(cart.length===0){
+  alert('Tu carrito está vacío.');
+  return;
+ }
+ alert('Tu pedido está preparado. El pago online estará disponible cuando configuremos la pasarela de pago.');
+}
+
+renderCart();
+</script>
 
 </body>
 </html>
