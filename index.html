@@ -230,7 +230,11 @@ FINALIZAR PEDIDO
 
 <script>
 let cart = JSON.parse(localStorage.getItem('motorsportCart') || '[]');
-function searchProducts(value){
+ const cards=document.querySelectorAll('#productos .cards .card');
+ cards.forEach(card=>{
+  card.style.display=card.textContent.toLowerCase().includes(value.toLowerCase())?'':'none';
+ });
+}
  const cards=document.querySelectorAll('#productos .cards .card');
  cards.forEach(card=>{
   card.style.display=card.textContent.toLowerCase().includes(value.toLowerCase())?'':'none';
